@@ -1,0 +1,40 @@
+#include<iostream.h>
+void main()
+{
+int y1,y2,m1,m2,d1,d2,r1,r2,r3;
+cout<<"enter the present date in YYYY/MM/DD:\n";
+cin>>y1;
+cin>>m1;
+cin>>d1;
+cout<<"enter the DOB in YYYY/MM/DD:\n";
+cin>>y2;
+cin>>m2;
+cin>>d2;
+
+if(d1>d2)
+r3=d1-d2;
+else
+{
+r3=(d1+30)-d2;
+m1=m1-1;
+}
+
+if(m1>m2)
+r2=m1-m2;
+else
+{
+r2=(m1+12)-m2;
+y1=y1-1;
+}
+
+r1=y1-y2;
+
+cout<<"your age is";
+cout<<" year="<<r1;
+cout<<" month="<<r2;
+cout<<" days="<<r3;
+}
+
+
+
+

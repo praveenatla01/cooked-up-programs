@@ -1,0 +1,77 @@
+#include<iostream.h>
+void main()
+{
+char c;
+int sum=0;
+cout<<"select any one no.n 1 2 3 4 5 6 7 8 9 10\nNOTE:Enter y for yes and n for no\n";
+cout<<"is that no. present here: 5 3 6 7 9\n";
+cin>>c;
+if(c=='y'||c=='Y')
+sum=sum+10;
+c=0;
+
+cout<<"is that no. present here: 5 3 2 1 8 10\n";
+cin>>c;
+if(c=='y'||c=='Y')
+sum=sum+20;
+c=0;
+
+cout<<"is that no. present here: 2 4 5 7 9 10\n";
+cin>>c;
+if(c=='y'||c=='Y')
+sum=sum+30;
+c=0;
+
+cout<<"is that no. present here: 3 5 8 9 10\n";
+cin>>c;
+if(c=='y'||c=='Y')
+sum=sum+40;
+c=0;
+
+switch(sum)
+{
+case 10:
+cout<<"the no. you choosed is 6";
+break;
+
+case 20:
+cout<<"the no. u choosed is 1";
+break;
+
+case 30:
+cout<<"the no. u choosed is 4";
+break;
+
+case 40:
+cout<<"the no. u choosed is 7";
+break;
+
+case 50:
+cout<<"the no. u choosed is 2";
+break;
+
+case 60:
+cout<<"the no. u choosed is 8";
+break;
+
+case 70:
+cout<<"the no. u choosed is 3";
+break;
+
+case 80:
+cout<<"the no. u choosed is 9";
+break;
+
+case 90:
+cout<<"the no. u choosed is 10";
+break;
+
+case 100:
+cout<<"the no. u choosed is 5";
+break;
+
+default:
+cout<<"enter multiples of 10 from 10-100";
+break;
+}
+}

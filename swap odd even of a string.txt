@@ -1,0 +1,18 @@
+#include<iostream.h>
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+char str[10];
+char temp;
+int i,n;
+cout<<"enter a string";
+gets(str);
+for(i=0;i<strlen(str);i=i+2)
+{
+temp=str[i];
+str[i]=str[i+1];
+str[i+1]=temp;
+}
+puts(str);
+}

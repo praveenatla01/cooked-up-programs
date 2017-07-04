@@ -1,0 +1,34 @@
+#include<iostream.h>
+void main()
+{
+int a[10]={2,3,4,5,6};int flag,i,j,k,f=0,s=1,t;
+int b[5],x[20];
+cout<<"enter the element to search:";
+for(i=0;i<3;i++)
+cin>>b[i];
+//fibonacci series
+for(k=0;k<15;k++)
+{
+t=f+s;
+x[k]=t;
+f=s;
+s=t;
+}
+for(k=0;k<15;k++)
+cout<<x[k]<<endl;
+
+
+for(j=0;j<3;j++)
+{
+	flag=0;
+	for(i=0;i<5;i++)
+		{
+		if(b[j]==x[i])
+		{	cout<<b[j]<<"found"<<endl  ;
+			flag=1;
+		}
+		}
+if(flag!=1)
+cout<<b[j]<<"not found"<<endl;
+}
+}

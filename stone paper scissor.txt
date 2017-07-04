@@ -1,0 +1,65 @@
+#include<iostream.h>
+void main()
+{
+int p1,p2;
+cout<<"NOTE: 0-stone, 1-paper, 2-scissor\nplayer 1 turn:"<<endl;
+cin>>p1;
+
+switch(p1)
+{
+case 0:
+	cout<<"stone"<<endl;break;
+case 1:
+	cout<<"paper"<<endl;break;
+case 2:
+	cout<<"scissor"<<endl;break;
+default:
+	cout<<"enter the numbers 0-2 only"<<endl;
+}
+
+cout<<"player 2 turn:"<<endl;
+cin>>p2;
+
+switch(p2)
+{
+case 0:
+	cout<<"stone"<<endl;break;
+case 1:
+	cout<<"paper"<<endl;break;
+case 2:
+	cout<<"scissor"<<endl;break;
+default:
+	cout<<"enter the numbers 0-2 only"<<endl;
+}
+
+if((p1==0&&p2==2)||(p1==1&&p2==0)||(p1==2&&p2==1))
+cout<<"player 1 wins";
+else
+cout<<"player 2 wins";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

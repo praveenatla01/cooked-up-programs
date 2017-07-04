@@ -1,0 +1,22 @@
+#include<iostream.h>
+#include<string.h>
+#include<stdio.h>
+void main()
+{
+int d=0;int i,l,j;
+char str[100];
+cout<<"enter a string with spaces\n";
+gets(str);
+l=strlen(str);
+for(i=0;i<=l;i++)
+{
+if(str[i]==' '||str[i]=='\0')
+{
+cout<<" ";
+for(j=i-1;j>=d;j--)
+{
+cout<<str[j];
+}
+d=i+1;
+}
+}}
